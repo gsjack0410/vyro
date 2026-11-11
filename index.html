@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VYRO — Free Gaming Optimizer for Windows</title>
+<meta name="description" content="VYRO is a free Windows app that monitors, analyzes and optimizes your PC and connection for VALORANT. Real before/after results, and every settings change can be undone.">
+<meta name="theme-color" content="#060706">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VYRO — Take control of your gaming performance">
+<meta property="og:description" content="Free Windows optimizer for VALORANT: monitor ping, jitter, hardware and FPS, optimize in one click, undo anytime.">
+<meta property="og:image" content="assets/screens/dashboard.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"VYRO","operatingSystem":"Windows 10, Windows 11","applicationCategory":"UtilitiesApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<script src="main.js" defer></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 8v5M12 16h.01"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a href="#home" class="brand" aria-label="VYRO home"><img src="assets/logo-emblem.png" alt=""><img class="wm" src="assets/logo-wordmark.png" alt="VYRO"></a>
+    <nav class="links" aria-label="Main">
+      <a href="#home" aria-current="page">Home</a><a href="#features">Features</a><a href="#how">How to Use</a><a href="#download">Download</a><a href="#faq">FAQ</a>
+    </nav>
+    <a href="#download" class="btn btn-main">Download</a>
+    <button class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><svg width="22" height="22"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobile"><a href="#home">Home</a><a href="#features">Features</a><a href="#how">How to Use</a><a href="#download">Download</a><a href="#faq">FAQ</a></nav>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="home" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1>Take control of your <em>gaming performance.</em></h1>
+        <p class="lede">Monitor, analyze and optimize your PC for a smoother and more consistent gaming experience. Built for VALORANT on Windows.</p>
+        <div class="ctas">
+          <a class="btn btn-main" href="#download"><svg><use href="#i-dl"/></svg>Download VYRO</a>
+          <a class="btn btn-ghost" href="#features">Explore features</a>
+        </div>
+        <div class="meta num"><span><b>Free</b></span><span>Windows 10 / 11 · 64-bit</span><span>v<span data-cfg="version"></span> · <span data-cfg="size"></span></span></div>
+      </div>
+      <img class="emblem" src="assets/logo-emblem.png" alt="VYRO emblem">
+    </div>
+    <div class="shot-hero">
+      <div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="assets/screens/dashboard.png" alt="The VYRO home screen showing live ping, jitter, packet loss, a readiness score and the OPTIMIZE NOW button" width="1600" height="1000"></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>One click</b>Scan, back up, optimize, verify</div>
+    <div><b>Measured, not promised</b>Real before/after numbers</div>
+    <div><b>Undo anytime</b>Every settings change is saved first</div>
+    <div><b>Anti-cheat safe</b>Never touches Vanguard or game files</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="wrap">
+    <div class="head"><h2>What VYRO does</h2><p class="lede">Everything below is in the app today. Real screenshots, real data from a real PC.</p></div>
+
+    <article class="feat">
+      <div class="copy"><h3>One-click optimization</h3>
+        <p>Press OPTIMIZE NOW. VYRO checks your PC, backs up your settings, applies safe Windows changes and measures again.</p>
+        <ul><li><svg><use href="#i-check"/></svg>See every change before it happens. Untick what you don't want</li><li><svg><use href="#i-check"/></svg>Limits background uploads that cause ping spikes</li><li><svg><use href="#i-check"/></svg>Power plan, Game Mode, GPU choice, refresh rate</li><li><svg><use href="#i-check"/></svg>Before/after results, then one-click undo</li></ul></div>
+      <div class="frame"><img src="assets/screens/optimize.png" alt="The One-Click Optimization screen listing each change with its status" loading="lazy"></div>
+    </article>
+
+    <article class="feat">
+      <div class="copy"><h3>Network monitor</h3>
+        <p>Live ping, jitter and packet loss, plus a test that shows how much your ping jumps when the connection is busy.</p>
+        <ul><li><svg><use href="#i-check"/></svg>Splits your Wi-Fi link from the rest of the route</li><li><svg><use href="#i-check"/></svg>Ping-under-load grade, A+ to F</li><li><svg><use href="#i-check"/></svg>Which apps are using your internet</li><li><svg><use href="#i-check"/></svg>Works on Ethernet, Wi-Fi, phone hotspot or USB tethering</li></ul></div>
+      <div class="frame"><img src="assets/screens/network.png" alt="The Network screen with ping and jitter over ten minutes" loading="lazy"></div>
+    </article>
+
+    <article class="feat">
+      <div class="copy"><h3>Hardware monitor</h3>
+        <p>See what your processor, graphics card and memory are doing, and which one is holding your frame rate back.</p>
+        <ul><li><svg><use href="#i-check"/></svg>CPU, GPU, VRAM and RAM load, live</li><li><svg><use href="#i-check"/></svg>GPU temperature and clock (NVIDIA)</li><li><svg><use href="#i-check"/></svg>Plain-words bottleneck verdict</li></ul></div>
+      <div class="frame"><img src="assets/screens/hardware.png" alt="The Hardware screen with CPU, GPU, VRAM and RAM gauges" loading="lazy"></div>
+    </article>
+
+    <article class="feat">
+      <div class="copy"><h3>FPS &amp; frame time <span class="tag beta">BETA</span></h3>
+        <p>Records your VALORANT matches automatically, or tests any game for 30 seconds. Powered by Intel PresentMon.</p>
+        <ul><li><svg><use href="#i-check"/></svg>Average FPS, 1% and 0.1% lows</li><li><svg><use href="#i-check"/></svg>Frame-time graph and stutter count</li><li><svg><use href="#i-check"/></svg>Match history to compare sessions</li></ul></div>
+      <div class="frame"><img src="assets/screens/fps.png" alt="The FPS and frame-time analyzer screen with the Test FPS now button" loading="lazy"></div>
+    </article>
+
+    <div class="more">
+      <div><h3>Three profiles</h3><p>Competitive, Max Performance and Network Stability. Edit any switch.</p></div>
+      <div><h3>Auto mode</h3><p>Optimizes when VALORANT opens and undoes it when it closes.</p></div>
+      <div><h3>Route compare</h3><p>Test hotspot, USB or VPN and see which one is steadier. Never switches for you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY / HONESTY -->
+<section class="honest">
+  <div class="wrap honest-grid">
+    <div><h2>Why VYRO</h2><p class="lede" style="margin-top:18px">Most boosters promise lower ping. VYRO shows you what's actually wrong, fixes what's on your side, and proves it with your own numbers.</p></div>
+    <div>
+      <ul class="does">
+        <li><svg><use href="#i-check"/></svg>Fixes ping spikes caused by your own PC and network</li>
+        <li><svg><use href="#i-check"/></svg>Backs up first. Undo one item or everything</li>
+        <li><svg><use href="#i-check"/></svg>Free, with no account and no ads</li>
+      </ul>
+      <ul class="doesnt">
+        <li><svg><use href="#i-x"/></svg>Can't shorten the distance to Riot's servers</li>
+        <li><svg><use href="#i-x"/></svg>Never touches Vanguard, VALORANT files, Defender, Firewall or Windows Update</li>
+        <li><svg><use href="#i-x"/></svg>No made-up "+40% FPS" claims</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section id="how">
+  <div class="wrap">
+    <div class="head"><h2>How to use VYRO</h2><p class="lede">Six steps, about five minutes, the first time.</p></div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Download</h3><p>Get <b>Vyro-Setup.exe</b> from this page.</p>
+        <div class="mini" style="display:grid;place-items:center;background:var(--bg2)"><span class="btn btn-main" style="pointer-events:none;height:46px">Download VYRO</span></div></div>
+      <div class="step"><div class="n">2</div><h3>Install</h3><p>If Windows warns you, click <b>More info → Run anyway</b>. VYRO isn't signed yet.</p>
+        <div class="mini smart"><div><b>Windows protected your PC</b>Microsoft Defender SmartScreen prevented an unrecognized app from starting.<br><span>More info</span></div></div></div>
+      <div class="step"><div class="n">3</div><h3>Scan</h3><p>Open VYRO. It checks your PC and connection right away.</p>
+        <div class="mini" style="--pos:0 0"><img src="assets/screens/dashboard.png" alt="" loading="lazy"></div></div>
+      <div class="step"><div class="n">4</div><h3>Analyze</h3><p>Read the issues on Home, then open Optimize to see each proposed change.</p>
+        <div class="mini" style="--pos:20% 0"><img src="assets/screens/optimize.png" alt="" loading="lazy"></div></div>
+      <div class="step"><div class="n">5</div><h3>Optimize</h3><p>Untick anything you don't want, then press <b>OPTIMIZE NOW</b>.</p>
+        <div class="mini" style="--pos:0 45%"><img src="assets/screens/optimize.png" alt="" loading="lazy" style="object-position:0 60%;transform:scale(1.6);transform-origin:12% 58%"></div></div>
+      <div class="step"><div class="n">6</div><h3>Verify</h3><p>Compare before and after. Not happy? Restore everything in one click.</p>
+        <div class="mini"><img src="assets/screens/backup.png" alt="" loading="lazy"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PREVIEW -->
+<section id="preview" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><h2>Inside the app</h2><p class="lede">Ten pages, one dark dashboard.</p></div>
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-img="dashboard">Home</button>
+      <button role="tab" aria-selected="false" data-img="network">Network</button>
+      <button role="tab" aria-selected="false" data-img="hardware">Hardware</button>
+      <button role="tab" aria-selected="false" data-img="config">Configuration</button>
+      <button role="tab" aria-selected="false" data-img="gaming">Gaming</button>
+      <button role="tab" aria-selected="false" data-img="backup">Backup</button>
+    </div>
+    <div class="frame"><div class="bar"><i></i><i></i><i></i></div><img id="pv" src="assets/screens/dashboard.png" alt="VYRO app screenshot" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download" class="honest">
+  <div class="wrap dl">
+    <div class="card dl-main">
+      <h2>Download VYRO for Windows</h2>
+      <dl class="specs num">
+        <div><dt>Version</dt><dd data-cfg="version"></dd></div>
+        <div><dt>Released</dt><dd data-cfg="date"></dd></div>
+        <div><dt>Installer size</dt><dd data-cfg="size"></dd></div>
+        <div><dt>Works on</dt><dd>Windows 10 / 11 · 64-bit</dd></div>
+      </dl>
+      <a class="btn btn-main" data-download><svg><use href="#i-dl"/></svg><span>Download VYRO</span></a>
+      
+      <div class="note"><svg><use href="#i-shield"/></svg><div>VYRO isn't code-signed yet, so Windows may show <b>"Windows protected your PC"</b>. Click <b>More info</b>, then <b>Run anyway</b>. The installer asks for admin rights because VYRO changes Windows settings.</div></div>
+    </div>
+    <div class="card">
+      <h3>Install in three steps</h3>
+      <ol class="install"><li>Run Vyro-Setup.exe and allow admin access.</li><li>Keep "Create a desktop shortcut" ticked and click Install.</li><li>Open VYRO from the desktop. Nothing else to install.</li></ol>
+      <h3>System requirements</h3>
+      <ul class="req" style="margin-top:14px"><li><b>OS</b> Windows 10 (1809+) or 11, 64-bit</li><li><b>Disk</b> about 200 MB</li><li><b>Account</b> Administrator, to apply changes</li><li><b>Optional</b> NVIDIA GPU for GPU temperature</li></ul>
+      <div class="log"><h3>What's new in <span data-cfg="version"></span></h3><p>First release: one-click optimization, network and hardware monitors, FPS analyzer (beta), profiles, auto mode, route compare, history and backup center.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="head"><h2>FAQ</h2></div>
+    <div class="faq">
+      <details open><summary>What is VYRO?<svg><use href="#i-plus"/></svg></summary><p>A free Windows app that checks your PC and connection, applies safe settings for gaming, and shows your ping, jitter, hardware load and FPS.</p></details>
+      <details><summary>Is VYRO free?<svg><use href="#i-plus"/></svg></summary><p>Yes. No account, no ads, no paid tier.</p></details>
+      <details><summary>Which Windows versions are supported?<svg><use href="#i-plus"/></svg></summary><p>Windows 10 (version 1809 or newer) and Windows 11, 64-bit.</p></details>
+      <details><summary>Does VYRO support VALORANT?<svg><use href="#i-plus"/></svg></summary><p>Yes, it's built around it. VYRO finds VALORANT, can optimize when it starts and undo when it closes. It never edits game files or touches Riot Vanguard.</p></details>
+      <details><summary>Can VYRO reduce ping?<svg><use href="#i-plus"/></svg></summary><p>It can reduce ping <i>spikes</i> caused on your side, such as background uploads, Wi-Fi power saving and busy connections. It can't shorten the distance to the game server. Your normal ping depends on your location and internet provider.</p></details>
+      <details><summary>Does VYRO work with mobile hotspots?<svg><use href="#i-plus"/></svg></summary><p>Yes. It detects phone hotspots and USB tethering and asks before running tests that use mobile data (about 35 MB).</p></details>
+      <details><summary>Is an internet connection required?<svg><use href="#i-plus"/></svg></summary><p>Only for the network tests. Optimization and the hardware monitor work offline.</p></details>
+      <details><summary>Can I restore my original Windows settings?<svg><use href="#i-plus"/></svg></summary><p>Yes. Every settings change is backed up first. Undo one item or everything in the Backup page. Uninstalling also restores them. The optional temp-file cleanup is the only thing that can't be undone.</p></details>
+      <details><summary>Is VYRO safe to use?<svg><use href="#i-plus"/></svg></summary><p>VYRO only uses standard Windows settings, installs no drivers, and never touches anti-cheat, game files, Defender, Firewall or Windows Update. It isn't code-signed yet, so Windows may warn you on first install.</p></details>
+      <details><summary>How do I update VYRO?<svg><use href="#i-plus"/></svg></summary><p>Download the newest installer from this page and run it. It updates in place and keeps your settings.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><a href="#home" class="brand"><img src="assets/logo-emblem.png" alt=""><img class="wm" src="assets/logo-wordmark.png" alt="VYRO"></a><p>Free gaming optimizer for Windows. Measure, optimize, undo.</p></div>
+      <div><h4>Product</h4><ul><li><a href="#download">Download</a></li><li><a href="#features">Features</a></li><li><a href="#how">User guide</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><span class="ph">Privacy policy (to add)</span></li><li><span class="ph">Terms of use (to add)</span></li></ul></div>
+      <div><h4>Contact</h4><ul><li><span class="ph">Email (to add)</span></li></ul></div>
+    </div>
+    <div class="copy-line"><span>© <span data-cfg="year">2026</span> VYRO. Not affiliated with Riot Games.</span><span>VALORANT is a trademark of Riot Games, Inc.</span></div>
+  </div>
+</footer>
+</body>
+</html>
