@@ -1,6 +1,6 @@
 (() => {
   const cfg = window.VYRO || {};
-  const values = { version: cfg.version, date: cfg.releaseDate, size: cfg.size, year: new Date().getFullYear() };
+  const values = { version: cfg.version, date: cfg.releaseDate, size: cfg.size, notes: cfg.notes, year: new Date().getFullYear() };
   document.querySelectorAll('[data-cfg]').forEach(el => {
     const v = values[el.dataset.cfg];
     if (v != null && v !== '') el.textContent = v;
