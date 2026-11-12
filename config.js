@@ -1,9 +1,9 @@
-// ===== VYRO website settings â€” edit these when you release a new version =====
+// ===== VYRO website settings Ã¢â‚¬â€ edit these when you release a new version =====
 window.VYRO = {
-  version: "0.2.1",
-  releaseDate: "11 Nov 2026",
+  version: "0.2.2",
+  releaseDate: "12 Nov 2026",
   size: "66 MB",
-  notes: "New: in-app updates. Vyro now tells you when a new version is out and installs it for you, no re-download needed.",
+  notes: "New: auto-undo. If ping under load gets clearly worse after optimizing (checked twice), Vyro undoes the changes by itself. Can be switched off in Config.",
 
   // Paste the public link to Vyro-Setup.exe here (for example a GitHub release link).
   // While it is empty, every download button shows "Download coming soon" and does nothing.
