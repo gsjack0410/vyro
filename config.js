@@ -1,4 +1,4 @@
-// ===== VYRO website settings Ã¢â‚¬â€ edit these when you release a new version =====
+// ===== VYRO website settings - edit these when you release a new version =====
 window.VYRO = {
   version: "0.2.2",
   releaseDate: "12 Nov 2026",
